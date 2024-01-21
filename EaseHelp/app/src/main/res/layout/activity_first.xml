@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/kk"
+    android:layout_margin="10dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="493dp"
+        app:srcCompat="@drawable/logo1" />
+
+    <!-- First TextView with larger text size, centered, bold, and green color -->
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Ease Help"
+        android:textColor="#2E8B57"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        app:fontFamily="sans-serif-smallcaps" />
+
+    <!-- Space between the first TextView and the second TextView -->
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="16dp" />
+
+    <!-- Second TextView with larger text size, centered -->
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Our help is a click away"
+        android:textSize="30sp"
+        android:textStyle="italic"
+        android:gravity="center_horizontal" />
+
+    <!-- Space between the second TextView and the ProgressBar -->
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="16dp" />
+
+    <ProgressBar
+        android:id="@+id/loadingProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="74dp"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:indeterminate="true"
+        android:progressDrawable="@drawable/custom_progress_bar" />
+
+</LinearLayout>

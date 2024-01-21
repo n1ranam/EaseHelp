@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:background="@drawable/kk"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/sign_in"
+        android:layout_width="match_parent"
+        android:layout_height="159dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="Senior Help"
+        android:textColor="#2E8B57"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        app:fontFamily="serif" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="16dp" /> <!-- Adds spacing between components -->
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="249dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:src="@drawable/logo1" />
+    <RadioGroup
+        android:id="@+id/usertype"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginLeft="15dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioSenior"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="25dp"
+            android:text="Elders" />
+
+        <RadioButton
+            android:id="@+id/radioVolunteer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="25dp"
+            android:text="Volunteers" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:ems="10"
+        android:hint="Phone"
+        android:inputType="textEmailAddress"
+        android:padding="20dp"
+        android:textColor="#000000"
+        android:textColorHint="#000000" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="-10dp"
+        android:layout_marginRight="-10dp"
+        android:hint="Password"
+        android:padding="20dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#000000"
+        app:passwordToggleDrawable="@drawable/baseline_visibility_off_24"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="@color/black">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:textColor="#000000" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/lginbtn"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:text="Log-In"
+        android:textColor="@color/white"
+        android:textColorHighlight="#08F4BE"
+        android:backgroundTint="#112C4C"
+        android:onClick="login_click"
+        android:textColorLink="#0CE1C9" />
+
+
+    <TextView
+        android:id="@+id/tvu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:paddingTop="20dp"
+        android:gravity="center"
+        android:text="Don't have an account yet?"
+        android:textColor="#0E1943"
+        android:textSize="15dp"
+        />
+</LinearLayout>
+
+
+
+

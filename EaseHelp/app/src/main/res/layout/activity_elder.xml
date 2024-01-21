@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:background="@drawable/kk"
+    tools:context=".elder">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_gravity="center"
+        android:src="@drawable/service"
+        tools:layout_editor_absoluteX="80dp"
+        tools:layout_editor_absoluteY="188dp" />
+
+    <Button
+        android:id="@+id/ssbtn"
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:backgroundTint="#112C4C"
+        android:drawableLeft="@drawable/ic_services"
+        android:text="Select Services"
+        android:textAlignment="center"
+        tools:layout_editor_absoluteX="99dp"
+        tools:layout_editor_absoluteY="49dp" />
+
+    <Button
+        android:id="@+id/sbtn"
+        android:layout_width="195dp"
+        android:layout_height="52dp"
+        android:backgroundTint="#112C4C"
+        android:drawableLeft="@drawable/ic_services"
+        android:drawablePadding="8dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:text="Submit"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.458"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ssbtn"
+        app:layout_constraintVertical_bias="0.653" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

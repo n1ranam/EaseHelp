@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/kk"
+    android:layout_margin="10dp"
+    android:orientation="vertical"
+    tools:context=".registration"
+    tools:visibility="visible">
+
+
+    <TextView
+        android:id="@+id/sign_in"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:paddingTop="10dp"
+        android:text="REGISTER"
+        android:textSize="34sp"
+        android:textColor="#2E8B57"
+        android:textStyle="bold|italic" />
+
+    <Spinner
+        android:id="@+id/spnr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:layout_marginTop="100dp" />
+
+    <EditText
+        android:id="@+id/rname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:ems="10"
+        android:hint="Name"
+        android:padding="15dp"
+        android:textColor="#000000"
+        android:textColorHint="#000000" />
+
+    <EditText
+        android:id="@+id/rdob"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:ems="10"
+        android:hint="Date of Birth"
+        android:padding="15dp"
+        android:textColor="#000000"
+        android:textColorHint="#000000" />
+
+    <EditText
+        android:id="@+id/raddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:ems="10"
+        android:hint="Location"
+        android:inputType="textEmailAddress"
+        android:padding="15dp"
+        android:textColor="#000000"
+        android:textColorHint="#000000" />
+
+    <EditText
+        android:id="@+id/rphone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:ems="10"
+        android:hint="Phone no"
+        android:padding="15dp"
+        android:textColor="#000000"
+        android:textColorHint="#000000" />
+
+    <EditText
+        android:id="@+id/remail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:ems="10"
+        android:hint="E-mail"
+        android:inputType="textEmailAddress"
+        android:padding="15dp"
+        android:textColor="#000000"
+        android:textColorHint="#000000" />
+
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:hint="Password"
+        android:padding="10dp"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="#000000">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/rpassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:textColor="#000000" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/Ibutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="55dp"
+        android:layout_marginRight="55dp"
+        android:backgroundTint="#112C4C"
+        android:drawableTint="@color/white"
+        android:onClick="OpenCamera"
+        android:text="Upload Image"
+        android:textColor="@color/white"
+        android:textColorHighlight="#112C4C"
+        android:textColorHint="@color/white"
+        android:textColorLink="#112C4C"
+        app:iconTint="@color/white"
+        app:iconTintMode="src_in"
+        tools:visibility="visible" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/sbtn"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:backgroundTint="#112C4C"
+        android:text="Submit"
+        android:textColor="@color/white"
+        android:textColorHighlight="#112C4C"
+        android:textColorLink="#112C4C"
+        app:iconTint="@color/white"
+        android:onClick="registeruser"/>
+
+
+</LinearLayout>

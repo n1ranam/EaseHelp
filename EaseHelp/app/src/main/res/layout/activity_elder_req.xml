@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    android:gravity="center"
+    android:padding="16dp"
+    android:background="@drawable/kk"
+    android:layout_gravity="center_horizontal">
+
+
+    <TextView
+        android:id="@+id/recordLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Record Your Requirement Here"
+        android:textSize="24sp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="16dp" /> <!-- Adds spacing between components -->
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="16dp" /> <!-- Adds spacing between components -->
+
+    <ImageView
+        android:id="@+id/rbtn"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center_horizontal"
+        android:clickable="true"
+        android:contentDescription="Record Button"
+        android:src="@drawable/record" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="16dp" /> <!-- Adds spacing between components -->
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="16dp" /> <!-- Adds spacing between components -->
+
+    <TextView
+        android:id="@+id/recordStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Click the button below to record"
+        android:textSize="18sp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="16dp" /> <!-- Adds spacing between components -->
+
+    <Button
+        android:id="@+id/rec_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#112C4C"
+        android:text="Record"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="16dp" /> <!-- Adds spacing between components -->
+
+    <Button
+        android:id="@+id/fin_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#112C4C"
+        android:text="Finish" />
+</LinearLayout>
